@@ -1,0 +1,29 @@
+.example-tweet {
+    border: 4px solid black;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.user-information {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.5em;
+}
+.avatar {
+    height: 80px;
+    width: 80px;
+}
+.avatar-name {
+    display: flex;
+    flex-direction: row;
+}
+.icons:hover {
+    color: rgb(32, 76, 209);
+} 
+.line-hr {
+    border: none;
+    height: 4px;
+    background-color: black;
+}
+
+

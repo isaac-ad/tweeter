@@ -1,0 +1,23 @@
+#textarea {
+  height: 3780px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #e6af22;
+  border: 1px solid black;
+}
+
+header img {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: -31px;
+}
+
+header h2 {
+  font-size: 2rem;
+  text-align: center;
+}
