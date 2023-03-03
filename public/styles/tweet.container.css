@@ -25,5 +25,13 @@
     height: 4px;
     background-color: black;
 }
-
+.example-tweet {
+    margin-bottom: 10px;
+}
+#error {
+    color: rgb(249, 166, 166);
+   font-family: sans-serif;
+   font-size: medium;
+   font-weight: 800;
+}
 

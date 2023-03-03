@@ -2,6 +2,11 @@
 <html lang="en">
   <head>
     <!-- Meta Information -->
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
     <title>Tweeter - Home Page</title>
 
     <!-- External CSS -->
@@ -33,6 +38,13 @@
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js"
+      integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script
       src="https://kit.fontawesome.com/b00e1fcf07.js"
       crossorigin="anonymous"
     ></script>
@@ -54,50 +66,34 @@
         <i class="fa-solid fa-angles-down"></i>
       </div>
     </nav>
-    <header id="header-1">
-      <div>
-        <img src="/images/profile-hex.png" />
-      </div>
-      <h2>Amy mansell</h2>
-    </header>
-
     <!-- Page-specific (main) content here -->
     <main class="container">
-      <section class="new-tweet">
-        <h2>Compose Tweet</h2>
-        <form class="tweet-form" action="/tweets" method="POST">
-          <label class="humming-about" for="tweet-text"
-            >What are you humming about?</label
-          >
-          <textarea class="textarea" name="text" id="tweet-text"></textarea>
-          <div class="line"></div>
-          <div class="bottom-container">
-            <button class="tweet-button" type="submit">Tweet</button>
-            <output name="counter" class="counter" for="tweet-text">140</output>
-          </div>
-        </form>
-      </section>
-      <section class="tweet-container">
-        <article class="example-tweet">
-          <section class="user-information">
-            <section class="avatar-name">
-              <img class="avatar" src="/images/avatar.png" />
-              <h3>isaac</h3>
-            </section>
-            <p>@isaac-ad</p>
-          </section>
-          <p>if i have seen further it is by standing on the shoulder of giants</p>
-            <hr class="line-hr">
-          <footer>
-            <span class="para-left"> 10 days ago</span>
-            <div align="right" class="icons">
-              <i class="fa-solid fa-flag"></i>
-              <i class="fas fa-heart"></i>
-              <i class="fas fa-retweet"></i>
+      <header class="app-class" id="header-1">
+        <div>
+          <img src="/images/avatar.png" />
+        </div>
+        <h2>isaac adnan</h2>
+      </header>
+      <div class="body-container">
+        <section class="new-tweet">
+          <h2>Compose Tweet</h2>
+          <div id="error" class="error-msg"></div>
+          <form class="tweet-form" action="/tweets" method="POST">
+            <label class="humming-about" for="tweet-text"
+              >What are you humming about?</label
+            >
+            <textarea class="textarea" name="text" id="tweet-text"></textarea>
+            <!-- <div class="line"></div> -->
+            <div class="bottom-container">
+              <button class="tweet-button" type="submit">Tweet</button>
+              <output name="counter" class="counter" for="tweet-text"
+                >140</output
+              >
             </div>
-          </footer>
-        </article>
-      </section>
+          </form>
+        </section>
+        <section class="tweet-container"></section>
+      </div>
     </main>
   </body>
 </html>

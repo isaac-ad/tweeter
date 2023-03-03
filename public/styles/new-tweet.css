@@ -11,9 +11,10 @@ textarea {
   font-family: emoji;
   font-size: 100%;
   line-height: 1;
-  margin: 0;
+  margin: 0 0 10px 0;
   border: none;
   outline: none;
+  border-bottom: 2px solid black;
   background-color: #f4f1ec;
 }
 .tweet-button {
